@@ -1,0 +1,73 @@
+body {
+    background-image: url(background.jpg);
+    background-size: 20%;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    border-radius: 10px;
+    size: 100%;
+    color: white;
+    padding: 20px 10px;
+}
+
+h1 {
+    color: black;
+    background-color: #ffffffea;
+    padding: 10px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+nav a {
+    border: white 1px solid;
+}
+
+
+
+.conteudo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: black;
+    color: white;  
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button, a {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    background-color: #565656;
+}

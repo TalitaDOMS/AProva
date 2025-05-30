@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastrar nota</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="../static/styles.css">
+    </head>
+    <header>
+      <h1>Histórico de notas</h1>
+      <nav>
+        <a href='/'>Histórico</a>
+        <a href='/cadastro'>Cadastrar nota</a>
+      </nav>
+    </header>
+    <body>
+      <div class="conteudo">
+        <h2>Resumo do aluno</h2>
+        <p>Aluno: {{ nome }}</p>
+        <p>Ra: {{ ra }}</p>
+        <p>Matéria: {{ tarefas }}</p>
+        <p>Nota: {{ provaMensal }}</p>
+        <p>Status: {{ provaBimestral }}</p>
+        <p>Média: {{ mediaFinal }}</p>
+        <p>Status: {{ status }}</p><br><br>
+
+        <a href="/">Voltar ao histórico</a>
+      </div>
+    </body>
+</html>

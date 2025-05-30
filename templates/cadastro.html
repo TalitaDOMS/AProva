@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar nota</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<header>
+  <h1>Cadastrar notas</h1>
+  <nav>
+    <a href='/'>Histórico</a>
+    <a href='/cadastro'>Cadastrar nota</a>
+  </nav>
+</header>
+<div class="conteudo">
+  <form action="/enviar" method="post">
+    <label for="nome">Nome do aluno:</label><br>
+    <input type="text" id="nome" name="nome"><br><br>
+    <label for="tarefas">Tarefas:</label><br>
+    <input type="number" id="tarefas" name="tarefas" step="0.25" min="0" max="10"><br><br>
+    <label for="provaMensal">Prova Mensal:</label><br>
+    <input type="number" id="provaMensal" name="provaMensal" step="0.25" min="0" max="10"><br><br>
+    <label for="provaBimestral">Prova Bimestral:</label><br>
+    <input type="number" id="provaBimestral" name="provaBimestral" step="0.25" min="0" max="10"><br><br>
+    <button type="submit">Enviar informações</button>
+  </form>
+</div>
+</body>
+</html>

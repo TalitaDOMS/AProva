@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Notas</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<header>
+  <h1>Histórico de notas</h1>
+  <nav>
+    <a href='/'>Histórico</a>
+    <a href='/cadastro'>Cadastrar nota</a>
+  </nav>
+</header>
+<div class="conteudo">
+  <h2>Bem-vindo ao sistema de notas!</h2>
+  <p> Reprovado = Abaixo de 5 <b>|</b> Recuperação = entre 5 e 7 <b>|</b> Aprovado = 7 para cima</p>
+  <table>
+    <tr>
+      <th>Aluno</th>
+      <th>RA</th>
+      <th>Tarefas</th>
+      <th>Prova Mensal</th>
+      <th>Prova Bimestral</th>
+      <th>Média</th>
+      <th>Status</th>
+    </tr>
+    {% for nome, ra, tarefas, provaMensal, provaBimestral, nota, status in dados %}
+    <tr>
+      <td>{{ nome }}</td>
+      <td>{{ ra }}</td>
+      <td>{{ tarefas }}</td>
+      <td>{{ provaMensal }}</td>
+      <td>{{ provaBimestral }}</td>
+      <td>{{ nota }}</td>
+      <td style="text-align:right;">{{ status }}</td>
+
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+</body>
+</html>
